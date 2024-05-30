@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color:black;
+}
+.header {
+    background-color:darkcyan;
+    padding: 20px 0;
+    height: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+.logo a {
+    animation: blink 4s linear infinite;
+    width: 150px;
+    height: 150px;
+    color:white;
+    font-weight: bolder;
+    font-size: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color:none;
+    overflow: hidden;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color:bisque;
+    color: #333;
+    display: block;
+    border-radius: 30px;
+    padding: 14px 14px;
+}
+nav ul li a.active {
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .home-section {
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .home-section .content {
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+
+  @keyframes scaleUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+  .home-section .content h1 {
+    animation: scaleUp 0.5s ease-in-out forwards;
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @keyframes glowing {
+    0% { box-shadow: 0 0 5px #9ecaed; }
+    50% { box-shadow: 0 0 20px #9ecaed; }
+    100% { box-shadow: 0 0 5px darkblue; }
+  }
+  
+  .logo {
+    animation: glowing 1.5s infinite alternate;
+    border-radius: 2px;
+    /* Add your logo styles here */
+  }
+  
+  
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content h1 span {
+    color:darkcyan;
+}
+
+.content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #52489C;
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #333;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #52489C;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Changed to a polygon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.about-section h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    animation: fadeIn 1s ease-in forwards;
+}
+.about-section p {
+    font-size: 16px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+            animation-delay: 1s;
+}
+.education-section, .projects-section, .contact-section {
+    background-color:black;
+}
+.about-section h2, .education-section h2, .projects-section h2, .contact-section h2  {
+    margin-bottom: 150px;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.skill-section h2, ul, li {
+    color: white;
+}
+.skill-section {
+    max-width: 800px;
+            margin: 20px auto;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    font-size: 16px;
+            margin-bottom: 8px;
+            animation: 1s ease-out 0.5s 1 slideInFromRight;
+}
+ul li{
+    padding: 10px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+.about-section p {
+    margin-top: 20px;
+}
+
+.education-section ul li{
+    margin-top: 15px;
+}
+.projects-section ul {
+    list-style:none;
+    text-align: right;
+    padding: 0;
+
+}
+
+.projects-section ul li {
+    margin-top: 15px;
+    text-align:center;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content, .polygon {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
