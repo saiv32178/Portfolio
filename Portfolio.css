@@ -195,12 +195,18 @@ section h2 {
 }
 .about-section h2{
     font-size: 24px;
-    margin-bottom: 10px;
+    text-align: right;
+    margin-bottom: 100px;
+    justify-content: left;
     text-decoration: underline;
     animation: fadeIn 1s ease-in forwards;
 }
 .about-section p {
     font-size: 16px;
+    justify-content: center;
+    padding: 100px;
+    margin-top: 200px;
+    margin-left: 150px;
             opacity: 0;
             animation: fadeIn 1s ease-in forwards;
             animation-delay: 1s;
@@ -208,8 +214,17 @@ section h2 {
 .education-section, .projects-section, .contact-section {
     background-color:black;
 }
-.about-section h2, .education-section h2, .projects-section h2, .contact-section h2  {
-    margin-bottom: 150px;
+.education-section h2 {
+    margin-top: 80px;
+}
+.projects-section h2{
+    margin-top: 80px;
+}
+.contact-section h2{
+    margin-top: 80px;
+}
+.about-section h2  {
+    margin-top: 50px;
 }
 
 @keyframes slideInFromRight {
